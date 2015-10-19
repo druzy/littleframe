@@ -17,7 +17,6 @@ public class AskFiles extends AbstractController {
 	
 	public AskFiles(FileFilter filter){
 		this(new AskFilesModel(filter));
-		
 	}
 
 	@Override

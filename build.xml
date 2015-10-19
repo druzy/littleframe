@@ -3,7 +3,7 @@
 <property name="src.dir" value="./"/>
 <property name="bin.dir" value="bin"/>
 <property name="jar.dir" value="jar"/>
-<property name="version" value="1"/>
+<property name="version" value="1.1"/>
 <property name="classpath.dir" value="/usr/share/java/"/>
 <property name="name" value="littleframe"/>
 
@@ -27,7 +27,12 @@
 
 <target name="jar" depends="compile">
 	<mkdir dir="${jar.dir}"/>
-	<jar destfile="${jar.dir}/${name}-${version}.jar" basedir="${bin.dir}"/>
+	<jar destfile="${jar.dir}/${name}-${version}.jar" basedir="${bin.dir}">
+		<fileset dir="${src.dir}">
+			<include name="druzy/littleframe/image/**/*.gif"/>
+		</fileset>
+	</jar>
+	
 	<echo message="Création du fichier Jar terminée"/>
 </target>
 

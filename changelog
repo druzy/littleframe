@@ -1,5 +1,9 @@
-protocol version 1:
-Découverte et intéraction avec différents protocoles : upnp, airplay, chromecast
-upnp : découverte et intéraction opérationnelles
-airplay : découverte opérationnelle
-chromecast : découverte et intéraction opérationnelles
+littleframe version 1.1 :
+information non fonctionnel
+bug fix : ajout des images au jar
+
+littleframe version 1 : 
+About non fonctionnel
+AskFile fonctionnel
+DoYouWant non fonctionnel
+WaitDevice fonctionnel

@@ -83,8 +83,11 @@ public class WaitDeviceView extends AbstractView {
 
 	@Override
 	public void display() {
-		waitFrame.setVisible(true);
-
+		SwingUtilities.invokeLater(new Runnable(){
+			public void run(){
+				waitFrame.setVisible(true);
+			}
+		});
 	}
 
 	@Override
@@ -94,9 +97,12 @@ public class WaitDeviceView extends AbstractView {
 
 	@Override
 	public void close() {
-		waitFrame.setVisible(false);
-		waitFrame.dispose();
-
+		SwingUtilities.invokeLater(new Runnable(){
+			public void run(){
+				waitFrame.setVisible(false);
+				waitFrame.dispose();
+			}
+		});
 	}
 
 }
