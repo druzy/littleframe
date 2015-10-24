@@ -55,7 +55,7 @@ public class WaitDeviceView extends AbstractView {
 					c.gridy=0;
 					waitFrame.add(gif, c);
 					
-					c.gridx++;
+					c.gridy++;
 					c.anchor=GridBagConstraints.CENTER;
 					waitFrame.add(text, c);
 					c.anchor=GridBagConstraints.LINE_START;
