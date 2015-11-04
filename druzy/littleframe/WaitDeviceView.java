@@ -44,6 +44,7 @@ public class WaitDeviceView extends AbstractView {
 					waitFrame=new JFrame();
 					waitFrame.setLayout(layout);
 					waitFrame.setUndecorated(true);
+					waitFrame.setLocationRelativeTo(null);
 				
 					gif=new JLabel(WaitDeviceModel.WAIT_GIF);
 					
